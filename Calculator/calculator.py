@@ -89,6 +89,7 @@ if __name__ == "__main__":
     # location inside the root window . 
     # when user press the button, the command or 
     # function affiliated to that button is executed . 
+    # all the buttons were styled
     button1 = Button(gui, text=' 1 ', fg='black', bg='skyblue', 
                      command=lambda: press(1), height=2, width=14) 
     button1.grid(row=2, column=0) 
@@ -126,18 +127,25 @@ if __name__ == "__main__":
     button0 = Button(gui, text=' 0 ', fg='black', bg='skyblue', 
                      command=lambda: press(0), height=2, width=14) 
     button0.grid(row=5, column=0) 
+    
+    #mathematical functions
+    #addition
   
     plus = Button(gui, text=' + ', fg='black', bg='skyblue', 
                   command=lambda: press("+"), height=2, width=14) 
     plus.grid(row=2, column=3) 
+    
+    #subtraction
   
     minus = Button(gui, text=' - ', fg='black', bg='skyblue', 
                    command=lambda: press("-"), height=2, width=14) 
     minus.grid(row=3, column=3) 
+    #multiplication
   
     multiply = Button(gui, text=' * ', fg='black', bg='skyblue', 
                       command=lambda: press("*"), height=2, width=14) 
     multiply.grid(row=4, column=3) 
+    #division
   
     divide = Button(gui, text=' / ', fg='black', bg='skyblue', 
                     command=lambda: press("/"), height=2, width=14) 
